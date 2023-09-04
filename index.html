@@ -9,23 +9,19 @@
 </head>
 <body>
 
-    <dl class="preflist">
-        <dt><label><input type="checkbox" name="prefA" value="サービス">サービス</label></dt>
-        <dd><label><input type="checkbox" name="prefB" value="経営コンサルタント">経営コンサルタント</label></dd>
-        <dd><label><input type="checkbox" name="prefB" value="広告代理業">広告代理業</label></dd>
-        <dd><label><input type="checkbox" name="prefB" value="デザイン制作">デザイン制作</label></dd>
-        <dd><label><input type="checkbox" name="prefB" value="建設業">建設業</label></dd>
-    </dl>
-    
-    <dl class="preflist">
-        <dt><label><input type="checkbox" name="prefA" value="サービス（教育/医療/福祉）">サービス（教育/医療/福祉）</label></dt>
-        <dd><label><input type="checkbox" name="prefA" value="教育（学習塾）">教育（学習塾）</label></dd>
-        <dd><label><input type="checkbox" name="prefB" value="教育（学校）">教育（学校）</label></dd>
-        <dd><label><input type="checkbox" name="prefB" value="病院">病院</label></dd>
-        <dd><label><input type="checkbox" name="prefB" value="介護">介護</label></dd>
-        <dd><label><input type="checkbox" name="prefB" value="保健所">保健所</label></dd>
-    </dl>  
-    
+    <div id="">
+        <ul>
+            <li><input type="checkbox" name="othersService1" id="consultant"><label for="consultant">経営コンサルタント</label></li>
+            <li><input type="checkbox" name="othersService" id="agency"><label for="agency">広告代理業</label></li>
+            <li><input type="checkbox" name="othersService" id="design"><label for="design">デザイン制作</label></li>
+            <li><input type="checkbox" name="othersService" id="construction"><label for="construction">建設業</label></li>
+        </ul>
+    </div>
+
+    <div id="">
+        <input type="checkbox" id="categoryOthersService"><label for="categoryOthersService">サービス</label>
+    </div>
+
     <script src="./js/index.js"></script>
 </body>
 </html>
