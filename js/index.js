@@ -12,3 +12,14 @@
 //     }
 // });
 
+let othersService = document.getElementsByName('othersService');
+let category = document.getElementById('categoryOthersService');
+
+category.addEventListener('change',check);
+
+function check(){
+  for(let i = 0;i<othersService.length;i++){
+    othersService[i].checked = true;
+    console.log(othersService[i]);
+  }
+}
