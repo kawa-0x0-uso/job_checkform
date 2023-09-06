@@ -9,17 +9,28 @@
 </head>
 <body>
 
-    <div id="">
-        <ul>
-            <li><input type="checkbox" name="othersService" id="consultant"><label for="consultant">経営コンサルタント</label></li>
-            <li><input type="checkbox" name="othersService" id="agency"><label for="agency">広告代理業</label></li>
-            <li><input type="checkbox" name="othersService" id="design"><label for="design">デザイン制作</label></li>
-            <li><input type="checkbox" name="othersService" id="construction"><label for="construction">建設業</label></li>
+    <div>
+        <ul id="othersService">
+            <li><input type="checkbox" name="othersService_child" id="consultant"><label for="consultant">経営コンサルタント</label></li>
+            <li><input type="checkbox" name="othersService_child" id="agency"><label for="agency">広告代理業</label></li>
+            <li><input type="checkbox" name="othersService_child" id="design"><label for="design">デザイン制作</label></li>
+            <li><input type="checkbox" name="othersService_child" id="construction"><label for="construction">建設業</label></li>
         </ul>
     </div>
 
-    <div id="">
+    <div>
+        <ul id="educationService">
+            <li><input type="checkbox" name="educationService_child" id="cramschool"><label for="cramschool">教育（学習塾）</label></li>
+            <li><input type="checkbox" name="educationService_child" id="school"><label for="school">教育（学校）</label></li>
+            <li><input type="checkbox" name="educationService_child" id="hospital"><label for="hospital">病院</label></li>
+            <li><input type="checkbox" name="educationService_child" id="care"><label for="care">介護</label></li>
+            <li><input type="checkbox" name="educationService_child" id="healthcenter"><label for="healthcenter">保健所</label></li>
+        </ul>
+    </div>
+
+    <div >
         <input type="checkbox" id="categoryOthersService"><label for="categoryOthersService">サービス</label>
+        <input type="checkbox" id="categoryEducationService"><label for="categoryOthersService">サービス（教育/医療/福祉）</label>
     </div>
 
     <script src="./js/index.js"></script>
