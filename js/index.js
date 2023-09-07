@@ -1,5 +1,5 @@
 // カテゴリ名を配列でセットする
-let category = ["othersService","educationService"];
+let category = ["othersService","educationService","foodsService"];
 
 // WEBページ上で変化があったら関数checkを呼び出す
 window.addEventListener('change',check);
