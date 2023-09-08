@@ -4,47 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>職業・職種アンケート</title>
 </head>
 <body>
 
-    <div class="industry">
-        <div>
-            <ul id="othersService">
-                <li><input type="checkbox" name="othersService_child" id="consultant" value="consultant"><label for="consultant">経営コンサルタント</label></li>
-                <li><input type="checkbox" name="othersService_child" id="agency" value="agency"><label for="agency">広告代理業</label></li>
-                <li><input type="checkbox" name="othersService_child" id="design" value="design"><label for="design">デザイン制作</label></li>
-                <li><input type="checkbox" name="othersService_child" id="construction" value="construction"><label for="construction">建設業</label></li>
-            </ul>
+    <h1>職業・職種アンケート</h1>
+    <h2>今までに経験したことのある業界を選択してください。</h2>
+    <form action="" method="get">
+        <div class="industry_area" id="industry">
+            <div>
+                <ul id="othersService">
+                    <li><input type="checkbox" name="othersService_child" id="consultant" value="consultant"><label for="consultant">経営コンサルタント</label></li>
+                    <li><input type="checkbox" name="othersService_child" id="agency" value="agency"><label for="agency">広告代理業</label></li>
+                    <li><input type="checkbox" name="othersService_child" id="design" value="design"><label for="design">デザイン制作</label></li>
+                    <li><input type="checkbox" name="othersService_child" id="construction" value="construction"><label for="construction">建設業</label></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul id="educationService">
+                    <li><input type="checkbox" name="educationService_child" id="cramschool" value="cramschool"><label for="cramschool">教育（学習塾）</label></li>
+                    <li><input type="checkbox" name="educationService_child" id="school" value="school"><label for="school">教育（学校）</label></li>
+                    <li><input type="checkbox" name="educationService_child" id="hospital" value="hospital"><label for="hospital">病院</label></li>
+                    <li><input type="checkbox" name="educationService_child" id="care" value="care"><label for="care">介護</label></li>
+                    <li><input type="checkbox" name="educationService_child" id="healthcenter" value="healthcenter"><label for="healthcenter">保健所</label></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul id="foodsService">
+                    <li><input type="checkbox" name="foodsService_child" id="restaurant" value="restaurant"><label for="restaurant">食堂・レストラン</label></li>
+                    <li><input type="checkbox" name="foodsService_child" id="cafe" value="cafe"><label for="cafe">喫茶店</label></li>
+                    <li><input type="checkbox" name="foodsService_child" id="hotel" value="hotel"><label for="hotel">旅館・ホテル</label></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul id="finance">
+                    <li><input type="checkbox" name="finance_child" id="bank" value="bank"><label for="bank">金融（銀行）</label></li>
+                    <li><input type="checkbox" name="finance_child" id="insurance" value="insurance"><label for="insurance">保険</label></li>
+                </ul>
+            </div>
         </div>
 
         <div>
-            <ul id="educationService">
-                <li><input type="checkbox" name="educationService_child" id="cramschool" value="cramschool"><label for="cramschool">教育（学習塾）</label></li>
-                <li><input type="checkbox" name="educationService_child" id="school" value="school"><label for="school">教育（学校）</label></li>
-                <li><input type="checkbox" name="educationService_child" id="hospital" value="hospital"><label for="hospital">病院</label></li>
-                <li><input type="checkbox" name="educationService_child" id="care" value="care"><label for="care">介護</label></li>
-                <li><input type="checkbox" name="educationService_child" id="healthcenter" value="healthcenter"><label for="healthcenter">保健所</label></li>
+            <ul class="industries_area">
+                <li><input type="checkbox" id="category_othersService" name="industries" value="othersService"><label for="categoryOthersService">サービス</label></li>
+                <li><input type="checkbox" id="category_educationService" name="industries" value="educationService"><label for="category_educationService">サービス（教育/医療/福祉）</label></li>
+                <li><input type="checkbox" id="category_foodsService" name="industries" value="foodsService"><label for="category_foodsService">サービス（教育/医療/福祉）</label></li>
+                <li><input type="checkbox" id="category_finance" name="industries" value="finance"><label for="category_finance">金融</label></li>
             </ul>
         </div>
 
-        <div>
-            <ul id="foodsService">
-                <li><input type="checkbox" name="foodsService_child" id="restaurant" value="restaurant"><label for="restaurant">食堂・レストラン</label></li>
-                <li><input type="checkbox" name="foodsService_child" id="cafe" value="cafe"><label for="cafe">喫茶店</label></li>
-                <li><input type="checkbox" name="foodsService_child" id="hotel" value="hotel"><label for="hotel">旅館・ホテル</label></li>
-            </ul>
+        <div class="job_category_area">
+            <div>
+                <h2>実際に行っていた業務を選択してください</h2>
+                <ul id="job_category">
+                    <li><input type="checkbox" name="job_category" id="tester_system" value="tester_system"><label for="tester_system">テスター（システム）</label></li>
+                    <li><input type="checkbox" name="job_category" id="tester_app" value="tester_app"><label for="tester_app">テスター（アプリ）</label></li>
+                    <li><input type="checkbox" name="job_category" id="tester_website" value="tester_website"><label for="tester_website">テスター（WEBサイト）</label></li>
+                    <li><input type="checkbox" name="job_category" id="technical_support" value="technical_support"><label for="technical_support">テクニカルサポート</label></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <div>
-        <ul class="industries">
-            <li><input type="checkbox" id="category_othersService" value="othersService"><label for="categoryOthersService">サービス</label></li>
-            <li><input type="checkbox" id="category_educationService" value="educationService"><label for="category_educationService">サービス（教育/医療/福祉）</label></li>
-            <li><input type="checkbox" id="category_foodsService" value="foodsService"><label for="category_foodsService">サービス（飲食・ホテル））</label></li>
-        </ul>
-    </div>
+        <div class="job_category_area">
+            <div>
+                <h2>現場で使用していたアプリケーションを選択してください。</h2>
+                <ul id="job_app">
+                    <li><input type="checkbox" name="job_app" id="excel" value="excel"><label for="excel">Excel</label></li>
+                    <li><input type="checkbox" name="job_app" id="powerpoint" value="powerpoint"><label for="powerpoint">PowerPoint</label></li>
+                    <li><input type="checkbox" name="job_app" id="word" value="word"><label for="word">Word</label></li>
+                    <li><input type="checkbox" name="job_app" id="google_spreadsheet" value="google_spreadsheet"><label for="google_spreadsheet">Googleスプレッドシート</label></li>
+                    <li><input type="checkbox" name="job_app" id="google_document" value="google_document"><label for="google_document">Googleドキュメント</label></li>
+                    <li><input type="checkbox" name="job_app" id="mail_system" value="mail_system"><label for="mail_system">メールシステム</label></li>
+                    <li><textarea name="job_app" id="others_app" value="others_app" placeholder="その他マイクロソフト製品、独自システムなど選択肢にないアプリを使用していた場合は記載してください。"></textarea></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="button">
+            <button type="submit" value="送信する">送信する</button>
+        </div>
+    </form>
 
     <script src="./js/index.js"></script>
 </body>
