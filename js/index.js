@@ -12,12 +12,12 @@ let jobCategory = document.getElementById('job_category');
 industry.addEventListener('change',industryCheck);
 // 職種にチェックが入ったら関数を呼び出す
 jobCategory.addEventListener('change',jobCategoryCheck);
+jobCategory.addEventListener('change',jobAppCheckOut);
+
 
 // 業界・業種のチェックボックスを連動させる
 function industryCheck(){
   for(let i = 0;i<CATEGORY.length;i++){
-    // 各業界を取得
-    let industry = document.getElementById(CATEGORY[i]);
     // 各業種を取得
     let industries = document.getElementById("category_"+CATEGORY[i]);
 
@@ -34,27 +34,53 @@ function industryCheck(){
   }
 }
 
+// 職種に連動させて使用アプリにチェックを入れる
+function jobAppChecked(jobApp){
+  for(let i = 0;i<jobApp.length;i++){
+    // アプリの項目を取得
+    let checkApp = document.getElementById(jobApp[i]);
+    // チェックを入れる
+    checkApp.checked = true;
+  }
+}
+
+// 職種に連動させて使用アプリにチェックを外す
+function jobAppCheckOut(jobApp){
+  for(let i = 0;i<jobApp.length;i++){
+    // アプリの項目を取得
+    let checkApp = document.getElementById(jobApp[i]);
+    // チェックを入れる
+    checkApp.checked = false;
+  }
+}
+
 // 職種・使用アプリのチェックボックスを連動させる
 function jobCategoryCheck(){
+  let jobApp = [];
   for(let i = 0;i<JOBCATEGORY.length;i++){
-    let job = document.querySelectorAll('ul#job_category>li>input[type="checkbox"]:checked');
-    console.log(i);
-    console.log(job[i].value);
+    // 各職種を取得
+    let job =  document.getElementById(JOBCATEGORY[i]);
 
+    // 職種にチェックが入っているかを判定
+    if(job.checked == true){
+      // チェックが入っている場合、職種によってケースを分ける
+      switch(job.value){
+        case "tester_system" :
+        case "tester_app" :
+        case "tester_website" :
+          // 使用するアプリを宣言
+          jobApp = ["excel","powerpoint","word"];
+          // 使用するアプリにチェックを入れる
+          jobAppChecked(jobApp);
+          break;
 
-    switch(job[i].value){
-      case 'tester_system':
-        let tester_system = ["excel","powerpoint","word"];
-        for(let i = 0;i<tester_system.length;i++){
-          let tester_system_app = document.querySelectorAll('li>input#'+tester_system+'[type="checkbox"]')
-          tester_system_app.checked = true;
-        }
-        break;
-
-      default:
-        let errorMessage = document.createElement('p');
-        errorMessage.textContent = "職種を選択してください。";
-        break;
+        case "technical_support" :
+          // 使用するアプリを宣言
+          jobApp = ["excel","powerpoint","word","mail_system"];
+          // 使用するアプリにチェックを入れる
+          jobAppChecked(jobApp);
+          break;
+      }
     }
   }
 }
