@@ -17,6 +17,15 @@ textarea {
     display: flex;
     justify-content: center;
 }
+.job_category_area{
+    flex-direction: column;
+    align-items: center;
+}
+
+.job_category_area button{
+    width: 40%;
+    margin-bottom: 20px;
+}
 
 .industries li{
     margin-right: 20px;

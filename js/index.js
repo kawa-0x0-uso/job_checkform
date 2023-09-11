@@ -8,12 +8,12 @@ let industry = document.getElementById('industry');
 // 職種エリアを取得する
 let jobCategory = document.getElementById('job_category');
 
+let reset_btn = document.getElementById('reset_btn');
+
 // 業界にチェックが入ったら関数industryCheckを呼び出す
 industry.addEventListener('change',industryCheck);
 // 職種にチェックが入ったら関数を呼び出す
 jobCategory.addEventListener('change',jobCategoryCheck);
-jobCategory.addEventListener('change',jobAppCheckOut);
-
 
 // 業界・業種のチェックボックスを連動させる
 function industryCheck(){
@@ -44,23 +44,12 @@ function jobAppChecked(jobApp){
   }
 }
 
-// 職種に連動させて使用アプリにチェックを外す
-function jobAppCheckOut(jobApp){
-  for(let i = 0;i<jobApp.length;i++){
-    // アプリの項目を取得
-    let checkApp = document.getElementById(jobApp[i]);
-    // チェックを入れる
-    checkApp.checked = false;
-  }
-}
-
 // 職種・使用アプリのチェックボックスを連動させる
 function jobCategoryCheck(){
   let jobApp = [];
   for(let i = 0;i<JOBCATEGORY.length;i++){
     // 各職種を取得
     let job =  document.getElementById(JOBCATEGORY[i]);
-
     // 職種にチェックが入っているかを判定
     if(job.checked == true){
       // チェックが入っている場合、職種によってケースを分ける
@@ -84,3 +73,10 @@ function jobCategoryCheck(){
     }
   }
 }
+
+function jobAppReset(){
+  let Appchecked = document.querySelectorAll('ul#job_app>li>input[type="checkbox"]:checked');
+  Appchecked.checked = false;
+}
+
+reset_btn.addEventListener('click',jobAppReset);
