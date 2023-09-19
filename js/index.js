@@ -1,5 +1,5 @@
 // 業種・業界のカテゴリ名を配列でセットする
-const CATEGORY = ["othersService","educationService","foodsService","finance"];
+const CATEGORY = ["othersService","educationService","foodsService","finance","sales"];
 // 職種を配列でセットする
 const JOBCATEGORY = ["tester_system","tester_app","tester_website","technical_support"];
 

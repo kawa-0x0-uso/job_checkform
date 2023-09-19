@@ -10,6 +10,7 @@
 
     <h1>職業・職種アンケート</h1>
     <h2>今までに経験したことのある業界を選択してください。</h2>
+    <p>複数ある場合は、複数選択をしてください。</p>
     <form action="" method="get">
         <div class="industry_area" id="industry">
             <div>
@@ -45,14 +46,25 @@
                     <li><input type="checkbox" name="finance_child" id="insurance" value="insurance"><label for="insurance">保険</label></li>
                 </ul>
             </div>
+
+            <div>
+                <ul id="sales">
+                    <li><input type="checkbox" name="sales_child" id="machine" value="machine"><label for="machine">販売（機械器具）</label></li>
+                    <li><input type="checkbox" name="sales_child" id="consumption" value="consumption"><label for="consumption">販売（飲食料）</label></li>
+                    <li><input type="checkbox" name="sales_child" id="furniture" value="furniture"><label for="furniture">販売（家具家電）</label></li>
+                    <li><input type="checkbox" name="sales_child" id="flower" value="flower"><label for="flower">販売（花き）</label></li>
+                    <li><input type="checkbox" name="sales_child" id="clothing" value="clothing"><label for="clothing">服飾</label></li>
+                </ul>
+            </div>
         </div>
 
         <div>
             <ul class="industries_area">
-                <li><input type="checkbox" id="category_othersService" name="industries" value="othersService"><label for="categoryOthersService">サービス</label></li>
+                <li><input type="checkbox" id="category_othersService" name="industries" value="othersService"><label for="category_othersService">サービス</label></li>
                 <li><input type="checkbox" id="category_educationService" name="industries" value="educationService"><label for="category_educationService">サービス（教育/医療/福祉）</label></li>
                 <li><input type="checkbox" id="category_foodsService" name="industries" value="foodsService"><label for="category_foodsService">サービス（教育/医療/福祉）</label></li>
                 <li><input type="checkbox" id="category_finance" name="industries" value="finance"><label for="category_finance">金融</label></li>
+                <li><input type="checkbox" id="category_sales" name="industries" value="sales"><label for="category_sales">販売・流通・小売</label></li>
             </ul>
         </div>
 
