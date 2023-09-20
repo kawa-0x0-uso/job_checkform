@@ -40,6 +40,17 @@ textarea {
 
 .industry_area div{
     width: calc(100%/2);
+    display: flex;
+    justify-content: center;
+}
+
+.industry_area div:last-child {
+    display: block;
+    width: 100%;
+}
+
+.industry_area div ul {
+    min-width: 180px;
 }
 
 .job_category_area{
@@ -58,4 +69,16 @@ textarea {
 
 .button{
     text-align: center;
+}
+
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media (min-width: 1024px) {
+    .industry_area div,
+    .industry_area div:last-child {
+        width: 15%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
 }

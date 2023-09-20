@@ -1,7 +1,11 @@
 // 業種・業界のカテゴリ名を配列でセットする
-const CATEGORY = ["othersService","educationService","foodsService","finance","sales"];
+const CATEGORY = ["othersService","educationService","foodsService","finance","sales",
+"telecommunications","realEstate","transportation","energy"];
 // 職種を配列でセットする
-const JOBCATEGORY = ["tester_system","tester_app","tester_website","technical_support"];
+const JOBCATEGORY = ["testerSystem","testerApp","testerwebsite","technicalSupport","telephoneSupport","systemDevelopment",
+"appDevelopment","statMonitoring","webPageCreation","websiteOperation","websiteMaintenance","cmsOperation","cmsMaintenance",
+"cmsBuilding","hmtlMailCreation","lpCreation","webDesignProduction","trainingSession","publicRelations","snsOperation",
+"snsPlanning","illustrationProduction","dbBuilding","dbOperational","infrastructureOperational"];
 
 // 業界エリアを取得する
 let industry = document.getElementById('industry');
@@ -54,21 +58,87 @@ function jobCategoryCheck(){
     if(job.checked == true){
       // チェックが入っている場合、職種によってケースを分ける
       switch(job.value){
-        case "tester_system" :
-        case "tester_app" :
-        case "tester_website" :
+        case "testerSystem" :
+        case "testerApp" :
+        case "testerWebsite" :
+        case "statMonitoring" :
           // 使用するアプリを宣言
           jobApp = ["excel","powerpoint","word"];
           // 使用するアプリにチェックを入れる
           jobAppChecked(jobApp);
           break;
 
-        case "technical_support" :
+        case "technicalSupport" :
+        case "telephoneSupport" :
           // 使用するアプリを宣言
-          jobApp = ["excel","powerpoint","word","mail_system"];
+          jobApp = ["excel","powerpoint","word","mailSystem"];
           // 使用するアプリにチェックを入れる
           jobAppChecked(jobApp);
           break;
+        case "systemDevelopment" :
+        case "appDevelopment" :
+          // 使用するアプリを宣言
+          jobApp = ["excel","googleSpreadsheet","googleDocument","visualStudioCode","sublimeText","adobeDreamweaver","versionManagement"];
+          // 使用するアプリにチェックを入れる
+          jobAppChecked(jobApp);
+          break;
+        case "webPageCreation" :
+        case "websiteOperation" :
+        case "websiteMaintenance" :
+          // 使用するアプリを宣言
+          jobApp = ["excel","googleSpreadsheet","googleDocument","visualStudioCode","sublimeText","adobeDreamweaver","versionManagement","adobePhotoshop"];
+          // 使用するアプリにチェックを入れる
+          jobAppChecked(jobApp);
+          break;
+        case "cmsOperation" :
+        case "cmsMaintenance" :
+        case "cmsBuilding" :
+          // 使用するアプリを宣言
+          jobApp = ["excel","googleSpreadsheet","googleDocument","wordpress"];
+          // 使用するアプリにチェックを入れる
+          jobAppChecked(jobApp);
+          break;
+        case "hmtlMailCreation" :
+          // 使用するアプリを宣言
+          jobApp = ["excel","googleSpreadsheet","googleDocument","visualStudioCode","sublimeText","adobeDreamweaver","adobePhotoshop"];
+          // 使用するアプリにチェックを入れる
+          jobAppChecked(jobApp);
+          break;
+        case "lpCreation" :
+        case "webDesignProduction" :
+        case "trainingSession" :
+          // 使用するアプリを宣言
+          jobApp = ["excel","googleSpreadsheet","googleDocument","visualStudioCode","sublimeText","adobeDreamweaver","adobePhotoshop","versionManagement"];
+          // 使用するアプリにチェックを入れる
+          jobAppChecked(jobApp);
+          break;
+        case "publicRelations" :
+        case "snsOperation" :
+        case "snsPlanning" :
+          // 使用するアプリを宣言
+          jobApp = ["googleSpreadsheet","googleDocument","twitter","instagram","facebook"];
+          // 使用するアプリにチェックを入れる
+          jobAppChecked(jobApp);
+          break;
+        case "illustrationProduction" :
+          // 使用するアプリを宣言
+          jobApp = ["adobePhotoshop"];
+          // 使用するアプリにチェックを入れる
+          jobAppChecked(jobApp);
+          break;
+        case "dbBuilding" :
+        case "dbOperational" :  
+          // 使用するアプリを宣言
+          jobApp = ["MySQL","postgresql"];
+          // 使用するアプリにチェックを入れる
+          jobAppChecked(jobApp);
+          break;
+        case "infrastructureOperational" :  
+        // 使用するアプリを宣言
+        jobApp = ["excel","MySQL","postgresql"];
+        // 使用するアプリにチェックを入れる
+        jobAppChecked(jobApp);
+        break;
       }
     }
   }
