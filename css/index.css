@@ -42,8 +42,7 @@ button {
 }
 
 .industries_area{
-    display: flex;
-
+    display: none;
 }
 
 .industry_area div{
