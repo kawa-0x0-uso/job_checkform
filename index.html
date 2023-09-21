@@ -111,7 +111,7 @@
         <div class="job_category_area">
             <div>
                 <h2>実際に行っていた業務を選択してください</h2>
-                <ul id="job_category">
+                <ul id="jobCategory" class="job_category_app">
                     <li><input type="checkbox" name="job_category" id="testerSystem" value="testerSystem"><label for="testerSystem">テスター（システム）</label></li>
                     <li><input type="checkbox" name="job_category" id="testerApp" value="testerApp"><label for="testerApp">テスター（アプリ）</label></li>
                     <li><input type="checkbox" name="job_category" id="testerWebsite" value="testerWebsite"><label for="testerWebsite">テスター（WEBサイト）</label></li>
@@ -144,7 +144,7 @@
         <div class="job_category_area">
             <div>
                 <h2>現場で使用していたアプリケーションを選択してください。</h2>
-                <ul id="job_app">
+                <ul id="jobApp" class="job_category_app">
                     <li><input type="checkbox" name="job_app" id="excel" value="excel"><label for="excel">Excel</label></li>
                     <li><input type="checkbox" name="job_app" id="powerpoint" value="powerpoint"><label for="powerpoint">PowerPoint</label></li>
                     <li><input type="checkbox" name="job_app" id="word" value="word"><label for="word">Word</label></li>
@@ -163,7 +163,7 @@
                     <li><input type="checkbox" name="job_app" id="MySQL" value="MySQL"><label for="MySQL">MySQL</label></li>
                     <li><input type="checkbox" name="job_app" id="postgresql" value="postgresql"><label for="postgresql">postgresql</label></li>
                     <li><input type="checkbox" name="job_app" id="version_management" value="version_management"><label for="version_management">バージョン管理システム（gitなど）</label></li>
-                    <li><textarea name="job_app" id="othersApp" value="othersApp" placeholder="その他マイクロソフト製品、独自システムなど選択肢にないアプリを使用していた場合は記載してください。"></textarea></li>
+                    <li class="job_app"><textarea name="job_app" id="othersApp" value="othersApp" placeholder="その他マイクロソフト製品、独自システムなど選択肢にないアプリを使用していた場合は記載してください。"></textarea></li>
                 </ul>
             </div>
             <button type="reset" id="reset_btn">アプリケーションをリセットする</button>

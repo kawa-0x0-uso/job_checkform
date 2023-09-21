@@ -10,7 +10,7 @@ const JOBCATEGORY = ["testerSystem","testerApp","testerwebsite","technicalSuppor
 // 業界エリアを取得する
 let industry = document.getElementById('industry');
 // 職種エリアを取得する
-let jobCategory = document.getElementById('job_category');
+let jobCategory = document.getElementById('jobCategory');
 
 let reset_btn = document.getElementById('reset_btn');
 
@@ -145,7 +145,7 @@ function jobCategoryCheck(){
 }
 
 function jobAppReset(){
-  let Appchecked = document.querySelectorAll('ul#job_app>li>input[type="checkbox"]:checked');
+  let Appchecked = document.querySelectorAll('ul#jobApp>li>input[type="checkbox"]:checked');
   Appchecked.checked = false;
 }
 
