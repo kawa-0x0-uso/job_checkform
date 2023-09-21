@@ -2,7 +2,7 @@
 const CATEGORY = ["othersService","educationService","foodsService","finance","sales",
 "telecommunications","realEstate","transportation","energy"];
 // 職種を配列でセットする
-const JOBCATEGORY = ["testerSystem","testerApp","testerwebsite","technicalSupport","telephoneSupport","systemDevelopment",
+const JOBCATEGORY = ["testerSystem","testerApp","testerWebsite","technicalSupport","telephoneSupport","systemDevelopment",
 "appDevelopment","statMonitoring","webPageCreation","websiteOperation","websiteMaintenance","cmsOperation","cmsMaintenance",
 "cmsBuilding","hmtlMailCreation","lpCreation","webDesignProduction","trainingSession","publicRelations","snsOperation",
 "snsPlanning","illustrationProduction","dbBuilding","dbOperational","infrastructureOperational"];
