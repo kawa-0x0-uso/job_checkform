@@ -4,10 +4,6 @@ const CATEGORY = ["othersService","educationService","sales","telecommunications
 
 // 業界エリアを取得する
 let industry = document.getElementById("industry");
-// 職種エリアを取得する
-let jobCategory = document.getElementById("jobCategory");
-
-let reset_btn = document.getElementById("reset_btn");
 
 // 業界にチェックが入ったら関数industryCheckを呼び出す
 industry.addEventListener("change",industryCheck);
