@@ -3,6 +3,7 @@ ul{
 }
 
 li {
+    display: flex;
     margin: 10px 0;
 }
 
@@ -20,6 +21,11 @@ ul{
 
 p{
     text-align: center;
+}
+
+input {
+    width: 18px;
+    height: 18px;
 }
 
 textarea {

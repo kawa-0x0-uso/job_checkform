@@ -1,6 +1,6 @@
 // 業種・業界のカテゴリ名を配列でセットする
-const CATEGORY = ["othersService","educationService","foodsService","finance","sales",
-"telecommunications","realEstate","transportation","energy"];
+const CATEGORY = ["othersService","educationService","sales","telecommunications","transportation",
+"foodsService","energy","finance","realEstate"];
 // 職種を配列でセットする
 const JOBCATEGORY = ["testerSystem","testerApp","testerWebsite","technicalSupport","telephoneSupport","systemDevelopment",
 "appDevelopment","statMonitoring","webPageCreation","websiteOperation","websiteMaintenance","cmsOperation","cmsMaintenance",
@@ -8,16 +8,17 @@ const JOBCATEGORY = ["testerSystem","testerApp","testerWebsite","technicalSuppor
 "snsPlanning","illustrationProduction","dbBuilding","dbOperational","infrastructureOperational"];
 
 // 業界エリアを取得する
-let industry = document.getElementById('industry');
+let industry = document.getElementById("industry");
 // 職種エリアを取得する
-let jobCategory = document.getElementById('jobCategory');
+let jobCategory = document.getElementById("jobCategory");
 
-let reset_btn = document.getElementById('reset_btn');
+let reset_btn = document.getElementById("reset_btn");
 
 // 業界にチェックが入ったら関数industryCheckを呼び出す
-industry.addEventListener('change',industryCheck);
+industry.addEventListener("change",industryCheck);
 // 職種にチェックが入ったら関数を呼び出す
-jobCategory.addEventListener('change',jobCategoryCheck);
+jobCategory.addEventListener("change",jobCategoryCheck);
+
 
 // 業界・業種のチェックボックスを連動させる
 function industryCheck(){
@@ -26,7 +27,7 @@ function industryCheck(){
     let industries = document.getElementById("category_"+CATEGORY[i]);
 
     // 各業界でチェックされている項目を取得
-    let checkChild = document.querySelectorAll('ul#'+ CATEGORY[i] + '>li>input[type="checkbox"]:checked');
+    let checkChild = document.querySelectorAll("ul#"+ CATEGORY[i] + ">li>input[type='checkbox']:checked");
 
     if(checkChild.length != 0){
       // 各業界でチェックされている項目が0以上の場合、連動する業種のチェックを入れる
@@ -34,7 +35,8 @@ function industryCheck(){
     }else{
       // 各業界でチェックされている項目が0の場合、連動する業種のチェックを外す
       industries.checked = false;
-    } 
+    }
+    sessionStorage.setItem("categorychecked",JSON.stringify(checkChild));
   }
 }
 
@@ -146,6 +148,7 @@ function jobCategoryCheck(){
 
 function jobAppReset(){
   let Appchecked = document.querySelectorAll('ul#jobApp>li>input[type="checkbox"]:checked');
+  console.log(jobApp);
   Appchecked.checked = false;
 }
 
