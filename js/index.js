@@ -11,9 +11,6 @@ let reset_btn = document.getElementById("reset_btn");
 
 // 業界にチェックが入ったら関数industryCheckを呼び出す
 industry.addEventListener("change",industryCheck);
-// 職種にチェックが入ったら関数を呼び出す
-jobCategory.addEventListener("change",jobCategoryCheck);
-
 
 // 業界・業種のチェックボックスを連動させる
 function industryCheck(){
