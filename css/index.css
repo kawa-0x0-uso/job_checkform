@@ -78,7 +78,7 @@ button {
 
 .job_category_area button {
     height: 50px;
-    width: 60%;
+    width: 80%;
     margin-bottom: 20px;
 }
 
@@ -91,6 +91,7 @@ button {
     width: 95% !important;
     margin: 15px auto;
     text-align: center;
+    justify-content: center;
 }
 
 .job_category_app li{
@@ -103,6 +104,7 @@ button {
 
 .button{
     text-align: center;
+    font-size: 18px;
 }
 
 /* ------------------------------------ */
