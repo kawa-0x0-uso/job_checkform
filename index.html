@@ -164,7 +164,10 @@
                     <li><input type="checkbox" name="job_app" id="MySQL" value="MySQL"><label for="MySQL">MySQL</label></li>
                     <li><input type="checkbox" name="job_app" id="postgresql" value="postgresql"><label for="postgresql">postgresql</label></li>
                     <li><input type="checkbox" name="job_app" id="versionManagement" value="versionManagement"><label for="versionManagement">バージョン管理システム（gitなど）</label></li>
-                    <li class="job_app"><textarea name="job_othersApp" id="othersApp" value="othersApp" placeholder="その他マイクロソフト製品、独自システムなど選択肢にないアプリを使用していた場合は記載してください。"></textarea></li>
+                    <li class="job_app">
+                        <label class="fs-6" for="othersApp">その他マイクロソフト製品、独自システムなど選択肢にないアプリを使用していた場合は記載してください。</label>
+                        <textarea name="job_othersApp" id="othersApp" value="othersApp" placeholder="例：access、サクラエディタ、illustrator など"></textarea>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -174,6 +177,7 @@
         </div>
     </form>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>
