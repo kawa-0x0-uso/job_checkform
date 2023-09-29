@@ -4,6 +4,7 @@ ul{
 
 li {
     display: flex;
+    align-items: center;
     margin: 10px 0;
 }
 
@@ -13,6 +14,8 @@ h1, h2 {
 
 h2{
     font-size: 18px;
+    margin: 0;
+    padding: 20px 0;
 }
 
 ul{
@@ -21,11 +24,16 @@ ul{
 
 p{
     text-align: center;
+    padding: 15px 0;
 }
 
 input {
     width: 18px;
     height: 18px;
+}
+
+label{
+    margin-left: 10px;
 }
 
 input#versionManagement {
@@ -85,7 +93,8 @@ button {
 
 .job_category_app {
     width: 100%;
-    margin: 0;
+    margin: 15px 0;
+    padding-left: 10px;
 }
 
 .job_app {
@@ -117,6 +126,9 @@ button {
     button {
         width: 15%;
     }
+    .industry_area {
+        margin: 30px 0;
+    }
     .industry_area div:last-child {
         display: flex;
         margin-right: auto;
@@ -128,6 +140,9 @@ button {
     }
     .job_category_area button {
         width: 20%;
+    }
+    .job_category_app{
+        margin: 30px auto;
     }
 }
 
@@ -142,7 +157,6 @@ button {
 
     .job_category_app {
         width: 80%;
-        margin: 0 auto;
     }
 
     .job_category_app li{

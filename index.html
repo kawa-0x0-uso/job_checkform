@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <title>職業・職種アンケート</title>
 </head>
 <body>
 
     <h1>職業・職種アンケート</h1>
-    <h2>今までに経験したことのある業界を選択してください。</h2>
-    <p>複数ある場合は、複数選択をしてください。</p>
+    <h2 class="bg-secondary bg-gradient text-light">今までに経験したことのある業界を選択してください。</h2>
+    <p class=" bg-light bg-gradient">複数ある場合は、複数選択をしてください。</p>
     <form action="" method="get">
         <div class="industry_area" id="industry">
             <div>
@@ -110,7 +111,7 @@
 
         <div class="job_category_area">
             <div>
-                <h2>実際に行っていた業務を選択してください</h2>
+                <h2 class="bg-secondary bg-gradient text-light">実際に行っていた業務を選択してください</h2>
                 <ul id="jobCategory" class="job_category_app">
                     <li><input type="checkbox" name="job_category" id="testerSystem" value="testerSystem"><label for="testerSystem">テスター（システム）</label></li>
                     <li><input type="checkbox" name="job_category" id="testerApp" value="testerApp"><label for="testerApp">テスター（アプリ）</label></li>
@@ -143,7 +144,7 @@
 
         <div class="job_category_area">
             <div>
-                <h2>現場で使用していたアプリケーションを選択してください。</h2>
+                <h2 class="bg-secondary bg-gradient text-light">現場で使用していたアプリケーションを選択してください。</h2>
                 <ul id="jobApp" class="job_category_app">
                     <li><input type="checkbox" name="job_app" id="excel" value="excel"><label for="excel">Excel</label></li>
                     <li><input type="checkbox" name="job_app" id="powerpoint" value="powerpoint"><label for="powerpoint">PowerPoint</label></li>
@@ -169,7 +170,7 @@
         </div>
 
         <div class="button">
-            <button type="submit" value="送信する">送信する</button>
+            <button type="submit" class="btn btn-lg btn-outline-primary" value="送信する">送信する</button>
         </div>
     </form>
 
